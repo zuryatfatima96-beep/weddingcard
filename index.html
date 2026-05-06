@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikah Card</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&family=Dancing+Script&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+
+    background: url('https://i.pinimg.com/736x/6c/2d/39/6c2d39f65ed0ebf38c4a5844373c1e5a.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+/* CARD ANIMATION */
+.card {
+    width: 150px;
+    background: #e0dbcde1;
+    border-radius: 200px 200px 0 0;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+
+    animation: fadeSlide 1.5s ease forwards;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* NAME ANIMATION */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #a0522d;
+    font-size: 26px;
+    margin: 10px 0;
+
+    animation: zoomIn 1.2s ease;
+}
+
+/* DATE PULSE */
+.date {
+    font-size: 22px;
+    margin: 20px 0;
+    color: #a0522d;
+
+    animation: pulse 2s infinite;
+}
+
+.and {
+    letter-spacing: 3px;
+    margin: 10px 0;
+    color: #444;
+}
+
+.subtitle {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+.details {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    color: #a0522d;
+}
+
+/* KEYFRAMES */
+@keyframes fadeSlide {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+</style>
+</head>
+
+<body>
+<audio autoplay loop>
+    <source src="https://audio.com/kaiser-sheikh/audio/ali-ke-sath-hai-zehra-ki-shadi" type="audio/mpeg">
+</audio>
+<div class="card">
+
+    <h1>Kaneez Fatima</h1>
+
+    <div class="and">AND</div>
+
+    <h1>Ali Hamza</h1>
+
+    <div class="subtitle">
+        TOGETHER WITH THEIR FAMILIES <br><br>
+        INVITE YOU TO CELEBRATE THEIR NIKKAH
+    </div>
+
+
+    <div class="date">
+        13-MAY-2026
+    </div>
+
+    <div class="details">
+        AT 5 PM O'CLOCK <br>
+        VENUE : SWEET HOME
+    </div>
+
+    <div class="footer">
+        YOUR PRESENCE IS THE BEST GIFT 💖
+    </div>
+
+</div>
+
+</body>
+</html>
